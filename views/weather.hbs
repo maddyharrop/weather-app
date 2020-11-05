@@ -1,0 +1,22 @@
+<h1>Weather Request</h1>
+
+<form action="/weather" method="POST">
+    <label for ="city">City:</label>
+    <input type="text" name="city">
+    <label for="code">Code:</label>
+    <input type="text" name="code">
+    <input type="submit" value="Submit">
+</form>
+
+<br>
+{{#if err}}
+    <h2>{{err}}</h2>>
+{{/if}}
+{{#if listExists}}
+    <h2>Todays weather in {{name}}:</h2>
+    <ul>
+        {{#each data}}
+        <li>{{@key}} : {{this}}</li>
+        {{/each}}
+    </ul>
+{{/if}}

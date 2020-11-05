@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/maddyharrop/weather-app#readme",
   "dependencies": {
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "express-handlebars": "^5.2.0",
     "node-fetch": "^2.6.1",
