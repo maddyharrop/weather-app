@@ -1,15 +1,13 @@
 const express = require('express');
 const router = express.Router(); 
 
-const getWeather = require("./lib/getWeather");
+const getWeather = require("../lib/getWeather");
 
-
-
-app.get("/weather", (req, res) => {
+router.get("/", (req, res) => {
     res.render("weather");
 });
 
-app.post("/weather", async (req, res) => {
+router.post("/", async (req, res) => {
     let city = req.body.city;
     let code = req.body.code;
     let data = await getWeather(city, code);
@@ -19,7 +17,6 @@ app.post("/weather", async (req, res) => {
         });
         return;
     }
-    console.log(data)
     let name = data.name;
     let description = data.weather[0].description;
     let temp = data.main.temp;
