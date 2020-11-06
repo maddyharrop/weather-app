@@ -1,12 +1,10 @@
-
 <div class="weather-main-home">
-<h2 class="today-weather"> Today's Weather in {{name}}</h2>
-<ul>
-    {{#each data}}
-    <li class="weather-types">{{@key}} : {{this}}</li>
-    {{/each}}
-</ul>
-<br>
+    <h2 class="today-weather"> Today's Weather in {{name}}</h2>
+    <ul>
+        {{#each data}}
+        <li class="weather-types">{{@key}} : {{this}}</li>
+        {{/each}}
+    </ul>
 
-<a class="btn-style" href="/weather">Find the Weather in...</a>
+    <a class="btn-style" href="/weather">Find the Weather in...</a>
 </div>

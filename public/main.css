@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Monda&display=swap');
-
+body {
+    background-image: url("/img/cloud.jpg");
+    background-repeat: repeat-x;
+}
 
 *{
     font-family: "Monda", Courier, monospace;
@@ -8,6 +11,7 @@
     padding: 0;
     box-sizing: border-box;
     text-align: center;
+    
 }
 .container{
     padding: 20px;
@@ -24,18 +28,12 @@ nav h1{
     border-radius: 15px;
     font-size: 20px;
 }
-.btn-style{
-    padding: 5px;
-    text-decoration: none;
-    background-color: darkgrey;
-    color: white;
-    border-radius: 5px;
-}
+
 ul li {
     list-style: none;
 }
 nav {
-    background-image: url("https://image.freepik.com/free-vector/seamless-pattern-cloud-blue-sky-illustration_53562-4534.jpg");
+    /* background-image: url("https://image.freepik.com/free-vector/seamless-pattern-cloud-blue-sky-illustration_53562-4534.jpg"); */
     background-repeat: repeat-x;
     padding: 5%;
     display: flex;
@@ -54,8 +52,15 @@ nav ul li{
     text-decoration: underline;
 }
 .weather-main-home{
-    background-color: teal;
+    background-color: rgb(11, 160, 160, 0.6);
 }
 .weather-types{
     text-transform: capitalize;
+}
+.btn-style{
+    padding: 5px;
+    text-decoration: none;
+    background-color: darkgrey;
+    color: white;
+    border-radius: 5px;
 }

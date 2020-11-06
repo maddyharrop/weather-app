@@ -14,6 +14,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 app.use(express.static(path.join(__dirname, "public")));
+app.use('/img', express.static(__dirname + '/Img'));
 
 app.engine("hbs", hbs({
     defaultLayout: "main",
