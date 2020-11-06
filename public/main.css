@@ -1,4 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monda&display=swap');
+
+
 *{
+    font-family: "Monda", Courier, monospace;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,8 +12,17 @@
 .container{
     padding: 20px;
 }
-h1 {
-    padding: 10px 0 ;
+nav h1{
+    font-size: 40px;
+    background-color: thistle;
+    padding: 1%;
+    border-radius: 15px;
+}
+.navlist{
+    background-color: thistle;
+    padding: 5%;
+    border-radius: 15px;
+    font-size: 20px;
 }
 .btn-style{
     padding: 5px;
@@ -21,8 +35,9 @@ ul li {
     list-style: none;
 }
 nav {
-    background-color: teal;
-    padding: 10px 15px; 
+    background-image: url("https://image.freepik.com/free-vector/seamless-pattern-cloud-blue-sky-illustration_53562-4534.jpg");
+    background-repeat: repeat-x;
+    padding: 5%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -34,4 +49,13 @@ nav ul {
 nav ul li{
     list-style: none;
     padding-left: 20px;
+}
+.today-weather{
+    text-decoration: underline;
+}
+.weather-main-home{
+    background-color: teal;
+}
+.weather-types{
+    text-transform: capitalize;
 }
