@@ -1,21 +1,28 @@
-<h1>Weather Request</h1>
+<div class="weather-main-home">
+
+<h1 class="today-weather">Weather Request</h1>
 
 <form action="/weather" method="POST">
+
     <label for="city">City:</label>
     <input type="text" name="city">
     <label for="code">Country Code:</label>
     <input type="text" name="code">
     <ul>
         <li><label for="sunriseCheck">Sunrise</label>
-            <input type="checkbox" name="sunriseCheck"></li>
+            <input type="checkbox" name="sunriseCheck">
+        </li>
         <li><label for="sunsetCheck">Sunset</label>
-            <input type="checkbox" name="sunsetCheck"></li>
+            <input type="checkbox" name="sunsetCheck">
+        </li>
         <li><label for="humidityCheck">Humidity</label>
-            <input type="checkbox" name="humidityCheck"></li>
+            <input type="checkbox" name="humidityCheck">
+        </li>
         <li><label for="descriptionCheck">Description</label>
-            <input type="checkbox" name="descriptionCheck"></li>
+            <input type="checkbox" name="descriptionCheck">
+        </li>
     </ul>
-    <input type="submit" value="Submit">
+    <input type="submit" value="Submit" class="btn-style">
 </form>
 
 <br>
@@ -30,3 +37,4 @@
     {{/each}}
 </ul>
 {{/if}}
+</div>

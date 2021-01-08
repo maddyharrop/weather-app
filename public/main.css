@@ -3,6 +3,7 @@
 body {
     background-image: url("/img/cloud.jpg");
     background-repeat: repeat-x;
+    background-size: 100vh;
 }
 
 *{
@@ -53,12 +54,14 @@ nav ul li{
 }
 .weather-main-home{
     background-color: rgb(11, 160, 160, 0.6);
+    min-height: 30vh;
 }
 .weather-types{
     text-transform: capitalize;
+    padding-bottom: 10px;
 }
 .btn-style{
-    padding: 5px;
+    padding-top: 5px;
     text-decoration: none;
     background-color: darkgrey;
     color: white;
